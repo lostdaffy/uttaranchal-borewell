@@ -17,9 +17,9 @@ const WhoWeAre = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <img
-                src="https://img.freepik.com/free-photo/industrial-drilling-equipment-construction-site_23-2148763542.jpg"
+                src="/images/logo.jpg"
                 alt="Drilling Equipment"
-                className="w-full h-[500px] object-cover rounded-lg shadow-lg"
+                className="w-full h-[500px] object-contain"
               />
             </div>
 
@@ -127,7 +127,7 @@ const WhoWeAre = () => {
 
             <div className="space-y-6">
               <img
-                src="https://img.freepik.com/free-photo/engineers-working-construction-site-with-drilling-equipment_23-2148763578.jpg"
+                src="/images/driller.jpg"
                 alt="Engineering Team"
                 className="w-full h-[600px] object-cover rounded-lg shadow-lg"
               />
@@ -153,9 +153,9 @@ const WhoWeAre = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <img
-                src="https://img.freepik.com/free-photo/oil-gas-industrial-platform-sunset-background_1150-10832.jpg"
+                src="/images/logo.jpg"
                 alt="Future Vision"
-                className="w-full h-[500px] object-cover rounded-lg shadow-lg"
+                className="w-full h-[500px] object-contain"
               />
             </div>
 

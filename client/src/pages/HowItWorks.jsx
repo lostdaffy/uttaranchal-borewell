@@ -80,7 +80,7 @@ const HowItWorks = () => {
             <div className="order-1 lg:order-2">
               <div className="relative">
                 <img
-                  src="https://img.freepik.com/free-photo/engineers-planning-construction-project_23-2149156125.jpg"
+                  src="/images/engineer.jpg"
                   alt="Site Assessment and Planning"
                   className="w-full h-[500px] object-cover rounded-lg shadow-lg"
                 />
@@ -98,7 +98,7 @@ const HowItWorks = () => {
             <div>
               <div className="relative">
                 <img
-                  src="https://img.freepik.com/free-photo/industrial-drilling-equipment-construction-site_23-2149156789.jpg"
+                  src="/images/working.jpg"
                   alt="Drilling Process"
                   className="w-full h-[500px] object-cover rounded-lg shadow-lg"
                 />
@@ -248,7 +248,7 @@ const HowItWorks = () => {
             <div className="order-1 lg:order-2">
               <div className="relative">
                 <img
-                  src="https://img.freepik.com/free-photo/water-quality-testing-laboratory_23-2149157432.jpg"
+                  src="/images/workers-checking.jpg"
                   alt="Testing and Completion"
                   className="w-full h-[500px] object-cover rounded-lg shadow-lg"
                 />

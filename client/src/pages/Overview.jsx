@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import GetInTouch from "../components/GetInTouch";
+import { Link } from "react-router-dom";
 
 const Overview = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
     <>
       {/* Hero Section */}
@@ -22,12 +21,18 @@ const Overview = () => {
                 cutting-edge technology.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-[#3dc1d3] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#2aa5b8] transition duration-300">
-                  Get Free Quote
-                </button>
-                <button className="border-2 border-[#3dc1d3] text-[#3dc1d3] px-8 py-4 rounded-lg font-semibold hover:bg-[#3dc1d3] hover:text-white transition duration-300">
-                  Our Services
-                </button>
+                <Link
+                  to="/our-services"
+                  className="bg-[#3dc1d3] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#2aa5b8] transition duration-300"
+                >
+                  <i className="ri-settings-5-line"></i> Our Services
+                </Link>
+                <Link
+                  to="/contact"
+                  className="border-2 border-[#3dc1d3] text-[#3dc1d3] px-8 py-4 rounded-full font-semibold hover:bg-[#3dc1d3] hover:text-white transition duration-300"
+                >
+                  <i className="ri-phone-fill"></i> Contact Us
+                </Link>
               </div>
             </div>
             <div className="relative">
@@ -186,7 +191,7 @@ const Overview = () => {
             <div className="order-1 lg:order-2">
               <div className="relative">
                 <img
-                  src="/images/about.jpg"
+                  src="/images/borewell-drilling.png"
                   alt="Manufacturing Equipment"
                   className="w-full h-[600px] object-cover rounded-lg shadow-lg"
                 />
@@ -363,7 +368,7 @@ const Overview = () => {
       </section>
 
       {/* Get In Touch */}
-      <GetInTouch/>
+      <GetInTouch />
     </>
   );
 };

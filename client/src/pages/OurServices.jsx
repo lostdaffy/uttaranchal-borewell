@@ -186,122 +186,106 @@ const OurServices = () => {
         des="Comprehensive drilling services and high-quality manufacturing solutions for all your water resource development needs"
       />
 
-      {/* Services We Provide Section */}
-      <section className="min-h-screen bg-white py-20">
+      {/* Services Section */}
+      <section className="min-h-screen bg-white flex items-center py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Services We Provide
+              Our Drilling Services
             </h2>
             <div className="w-24 h-1 bg-[#3dc1d3] mx-auto mb-6"></div>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Professional drilling services across Northern India with
-              cutting-edge technology and expert execution
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Comprehensive drilling solutions across Northern India with
+              cutting-edge technology and expert execution.
             </p>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {drillingServices.map((service, index) => (
+            {[
+              "Tubewell Drilling",
+              "Water Well Drilling",
+              "Borewell Drilling",
+              "Water Harvesting Tubewell Drilling",
+              "Building Foundation Pilling Drilling",
+              "Development Of Tubewell by OP Unit Repair & Maintenance of Drilling Rigs",
+            ].map((service, index) => (
               <div
                 key={index}
-                className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition duration-300 hover:border-[#3dc1d3] group"
+                className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300 hover:border-[#3dc1d3]"
               >
-                <div className="h-48 overflow-hidden">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-                  />
+                <div className="w-12 h-12 bg-[#3dc1d3] rounded-lg flex items-center justify-center mb-4">
+                  <i className="ri-tools-line text-white text-xl"></i>
                 </div>
-                <div className="p-6">
-                  <div className="w-12 h-12 bg-[#3dc1d3] rounded-lg flex items-center justify-center mb-4">
-                    <i className={`${service.icon} text-white text-xl`}></i>
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  {service}
+                </h3>
+                <p className="text-gray-600">
+                  Professional drilling services with modern equipment and
+                  experienced technicians ensuring quality results.
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Manufacturing Section */}
-      <section className="min-h-screen bg-[#3dc1d312] py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Manufacturing Division
-            </h2>
-            <div className="w-24 h-1 bg-[#3dc1d3] mx-auto mb-6"></div>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              High-quality drilling equipment and machinery manufactured with
-              precision engineering and cutting-edge technology
+   {/* Manufacturing Section */}
+<section className="min-h-screen bg-[#3dc1d312] py-20">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold text-gray-900 mb-4">
+        Manufacturing Division
+      </h2>
+      <div className="w-24 h-1 bg-[#3dc1d3] mx-auto mb-6"></div>
+      <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        High-quality drilling equipment and machinery manufactured with
+        precision engineering and cutting-edge technology
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {manufacturingProducts.map((product, index) => (
+        <div key={index} className="group">
+          <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 h-full">
+            {/* Header with Icon and Title */}
+            <div className="flex items-start mb-6">
+              <div className="w-14 h-14 bg-[#3dc1d3] rounded-xl flex items-center justify-center mr-4 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                <i className={`${product.icon} text-white text-xl`}></i>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-xl font-bold text-gray-900 leading-tight">
+                  {product.title}
+                </h3>
+              </div>
+            </div>
+
+            {/* Description */}
+            <p className="text-gray-600 mb-6 leading-relaxed">
+              {product.description}
             </p>
-          </div>
 
-          <div className="space-y-12">
-            {manufacturingProducts.map((product, index) => (
-              <div
-                key={index}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-                  index % 2 === 1 ? "lg:grid-flow-col-dense" : ""
-                }`}
-              >
-                <div className={`${index % 2 === 1 ? "lg:col-start-2" : ""}`}>
-                  <div className="bg-white p-8 rounded-lg shadow-lg">
-                    <div className="flex items-center mb-6">
-                      <div className="w-16 h-16 bg-[#3dc1d3] rounded-lg flex items-center justify-center mr-4">
-                        <i
-                          className={`${product.icon} text-white text-2xl`}
-                        ></i>
-                      </div>
-                      <h3 className="text-3xl font-bold text-gray-900">
-                        {product.title}
-                      </h3>
-                    </div>
-
-                    <p className="text-lg text-gray-600 mb-6">
-                      {product.description}
-                    </p>
-
-                    <div className="mb-6">
-                      <h4 className="text-lg font-semibold text-gray-900 mb-3">
-                        Key Features:
-                      </h4>
-                      <div className="grid grid-cols-2 gap-2">
-                        {product.features.map((feature, featureIndex) => (
-                          <div key={featureIndex} className="flex items-center">
-                            <i className="ri-checkbox-circle-line text-[#3dc1d3] mr-2"></i>
-                            <span className="text-gray-600 text-sm">
-                              {feature}
-                            </span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
+            {/* Features */}
+            <div className="mt-auto">
+              <h4 className="text-lg font-semibold text-gray-900 mb-4">
+                Key Features:
+              </h4>
+              <div className="space-y-2">
+                {product.features.map((feature, featureIndex) => (
+                  <div key={featureIndex} className="flex items-start">
+                    <i className="ri-checkbox-circle-fill text-[#3dc1d3] mr-3 mt-0.5 flex-shrink-0"></i>
+                    <span className="text-gray-600 text-sm leading-relaxed">
+                      {feature}
+                    </span>
                   </div>
-                </div>
-
-                <div className={`${index % 2 === 1 ? "lg:col-start-1" : ""}`}>
-                  <div className="relative">
-                    <img
-                      src={product.image}
-                      alt={product.title}
-                      className="w-full h-[350px] object-cover rounded-lg shadow-lg"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
-                  </div>
-                </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Manufacturing Features */}
       <section className="h-[400px] flex items-center">
