@@ -126,7 +126,7 @@ const GetInTouch = () => {
                     <input
                       type="hidden"
                       name="access_key"
-                      value="7a44d80a-3342-483d-8ca5-5431b1fd2b7c"
+                      value="4806b9d9-6b90-416d-a72a-c36f5fb8658c"
                     />
 
                     {/* Full Name + Phone in One Row */}
@@ -203,10 +203,10 @@ const GetInTouch = () => {
                     {/* Submit Button */}
                     <button
                       type="submit"
-                      className="w-full bg-gradient-to-r from-[#3dc1d3] to-[#2aa5b8] text-white py-3 md:py-4 px-4 md:px-6 rounded-lg font-bold text-base md:text-lg hover:from-[#2aa5b8] hover:to-[#3dc1d3] transition-all duration-300 flex items-center justify-center"
+                      className="w-full bg-[#3dc1d3] text-white py-3 md:py-4 px-4 md:px-6 rounded-lg font-bold text-base md:text-lg hover:from-[#2aa5b8] hover:to-[#3dc1d3] transition-all duration-300 flex items-center justify-center"
                     >
                       <i className="ri-send-plane-fill mr-2"></i>
-                      Get Free Quote
+                      Submit
                     </button>
 
                     <p className="text-xs md:text-sm text-gray-500 mt-3 md:mt-4 text-center">
